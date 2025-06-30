@@ -38,4 +38,102 @@ img{
     height: 80%;
 
 }
+.content-items {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+.content-items {
+    position: relative;
+    width: 100%; /* Image full width le sake */
+}
+
+.content-items img {
+    width: 100%; /* Image full screen le */
+    height: auto; /* Proportion maintain kare */
+}
+
+.content-items {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* vh = viewport height, yeh height screen ka 60% hoga */
+    overflow: hidden; /* Image agar badi ho to cut ho jaye */
+}
+
+.content-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image crop hoke area fill kare */
+}
+
+.text-over-image {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+
+    /* Shadow for better visibility on image */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+}
+.search-bar {
+    position: absolute;
+    top: 160px;     /* text se thoda niche */
+    left: 130px;    /* left se thoda right */
+    display: flex;
+    gap: 10px;
+}
+
+
+.search-bar input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e65c00;
+}
+.section-divider {
+    width: 90px;
+    height: 0.5px;                  /* Thin but still visible */
+    background-color: black;
+    margin: 30px auto 0 auto;
+    border-radius: 1px;           /* Optional: soft edges */
+    display: block;               /* Ensure it's treated as a box */
+}
+
+.white-section {
+    background-color: white;
+    height: 100vh;  /* ya jitni height chahiye utni */
+    padding: 40px;
+}
+.section-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    font-family: Calibri, sans-serif;
+}
+
 
